@@ -1,3 +1,7 @@
+# Calculate the mass of a protein based on the sequence.
+# Masses derived from the monoisotopic mass table.
+# Mass table represented by dictionary.
+
 amino_acid_mass = {
     'A': 71.03711,
     'C': 103.00919,
@@ -19,6 +23,8 @@ amino_acid_mass = {
     'V': 99.06841,
     'W': 186.07931,
     'Y': 163.06333}
+
+# This loop iterates over the sequence, finds the mass in the dictionary and sums the masses.
 
 with open('aa_seq.txt') as f:
     for line in f:
